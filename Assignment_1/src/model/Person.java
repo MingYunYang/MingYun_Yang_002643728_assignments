@@ -4,6 +4,8 @@
  */
 package model;
 
+import javax.swing.Icon;
+
 /**
  *
  * @author libby
@@ -24,6 +26,7 @@ public class Person {
     private String vehicleIdentifiers;
     private String deviceIdentifiers;
     private String linkedIn;
+    private Icon photo;
     
     public String getName() {
         return name;
@@ -135,6 +138,14 @@ public class Person {
 
     public void setLinkedIn(String linkedIn) {
         this.linkedIn = linkedIn;
+    }
+    
+    public Icon getPhoto(){
+        return photo;
+    }
+    
+    public void setPhoto(Icon photo){
+        this.photo = photo;
     }
     
     @Override

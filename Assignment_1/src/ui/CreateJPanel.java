@@ -4,6 +4,15 @@
  */
 package ui;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import model.Person;
 import model.PersonHistory;
@@ -138,8 +147,15 @@ public class CreateJPanel extends javax.swing.JPanel {
         });
 
         lalPhoto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lalPhoto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lalPhoto.setPreferredSize(new java.awt.Dimension(200, 200));
 
         btnUpload.setText("Upload");
+        btnUpload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUploadActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -323,6 +339,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         p.setVehicleIdentifiers(txtVehicleNum.getText());
         p.setDeviceIdentifiers(txtDeviceNum.getText());
         p.setLinkedIn(txtLinkedin.getText());
+        p.setPhoto(lalPhoto.getIcon());
         
         JOptionPane.showMessageDialog(this, "New profile saved");
         clearTextField();
@@ -331,6 +348,29 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void txtHealthNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHealthNumActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtHealthNumActionPerformed
+
+    private void btnUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadActionPerformed
+        //Code below has not been completed!!!!!1
+        
+        JFileChooser chooser = new JFileChooser();
+        
+        //Show dialog to ask user to choose an image
+        chooser.showOpenDialog(null);
+        
+        //Get the path of the selected file
+        File f = chooser.getSelectedFile();
+        String path = f.getAbsolutePath();
+        
+        //Read & Resize the image
+        try {
+            BufferedImage bi = ImageIO.read(new File(path));
+            Image img = bi.getScaledInstance(200,200,Image.SCALE_SMOOTH);
+            ImageIcon icon = new ImageIcon(img);
+            lalPhoto.setIcon(icon);
+        } catch (IOException ex) {
+            Logger.getLogger(CreateJPanel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnUploadActionPerformed
 
     public void clearTextField(){
         txtName.setText("");
@@ -347,6 +387,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         txtVehicleNum.setText("");
         txtDeviceNum.setText("");
         txtLinkedin.setText("");
+        lalPhoto.setIcon(null);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
