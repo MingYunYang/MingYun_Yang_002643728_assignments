@@ -350,8 +350,7 @@ public class CreateJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtHealthNumActionPerformed
 
     private void btnUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadActionPerformed
-        //Code below has not been completed!!!!!1
-        
+
         JFileChooser chooser = new JFileChooser();
         
         //Show dialog to ask user to choose an image
