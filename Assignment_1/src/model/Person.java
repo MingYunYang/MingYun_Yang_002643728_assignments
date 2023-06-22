@@ -4,6 +4,7 @@
  */
 package model;
 
+import java.util.ArrayList;
 import javax.swing.Icon;
 
 /**
@@ -12,36 +13,89 @@ import javax.swing.Icon;
  */
 public class Person {
     
-    private String name;
-    private String address;
+    private String firstName;
+    private String lastName;
     private String birth;
+    private String SSN;
+    private ArrayList<Address> address;
     private String telePhone;
     private String faxPhone;
-    private String email;
-    private String socialSecurityNum;
+    private ArrayList<Email> email;
     private String medicalRecordNum;
     private String healthPlanNum;
-    private String bankAccountNum;
-    private String licenseNum;
-    private String vehicleIdentifiers;
-    private String deviceIdentifiers;
+    private Vehicle vehicle;
+    private Device device;
+    private ArrayList<Bank> bank;
+    private Certification certification;
     private String linkedIn;
     private Icon photo;
     
-    public String getName() {
-        return name;
+    public Person(){
+        this.address = new ArrayList<Address>();
+        this.email = new ArrayList<Email>();
+        this.bank = new ArrayList<Bank>();
+    }
+    
+    public Address addAddress(String s, String city, String zip, String state, String country, String type){
+        Address a = new Address(s, city, zip, state, country, type);
+        address.add(a);
+        return a;
+    }
+    
+    public void deleteAddress(Address a){
+           address.remove(a);
+    }
+    
+    public Email addEmail(String email, String type){
+        Email e = new Email(email, type);
+        this.email.add(e);
+        return e;
+    }
+    
+    public void deleteEmail(Email e){
+        email.remove(e);
+    }
+    
+    public void addDevice(String type, String model, String IMEI){
+        this.device = new Device(type, model, IMEI);
+    }
+    
+    public void addVehicle(String type, String model, String plate){
+        this.vehicle = new Vehicle(type, model, plate);
+    }
+    
+    public Bank addBank(String bankName, String routing, String account, String type){
+        Bank b = new Bank(bankName, routing, account, type);
+        this.bank.add(b);
+        return b;
+    }
+    
+    public void deleteBank(Bank b){
+        bank.remove(b);
+    }
+    
+    public void addCertification(String number, String date){
+        this.certification = new Certification(number, date);
+    }
+    
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String name) {
+        this.firstName = name;
+    }
+    
+    public String getLastName() {
+        return lastName;
     }
 
-    public String getAddress() {
+    public void setLastName(String name) {
+        this.lastName = name;
+    }
+
+    public ArrayList<Address> getAddress() {
         return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getBirth() {
@@ -68,20 +122,16 @@ public class Person {
         this.faxPhone = faxPhone;
     }
 
-    public String getEmail() {
+    public ArrayList<Email> getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getSSN() {
+        return SSN;
     }
 
-    public String getSocialSecurityNum() {
-        return socialSecurityNum;
-    }
-
-    public void setSocialSecurityNum(String socialSecurityNum) {
-        this.socialSecurityNum = socialSecurityNum;
+    public void setSSN(String socialSecurityNum) {
+        this.SSN = socialSecurityNum;
     }
 
     public String getMedicalRecordNum() {
@@ -100,36 +150,32 @@ public class Person {
         this.healthPlanNum = healthPlanNum;
     }
 
-    public String getBankAccountNum() {
-        return bankAccountNum;
+    public ArrayList<Bank> getBank() {
+        return bank;
     }
 
-    public void setBankAccountNum(String bankAccountNum) {
-        this.bankAccountNum = bankAccountNum;
+    public Certification getCertification() {
+        return certification;
     }
 
-    public String getLicenseNum() {
-        return licenseNum;
+    public void setCertification(Certification certification) {
+        this.certification = certification;
     }
 
-    public void setLicenseNum(String licenseNum) {
-        this.licenseNum = licenseNum;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public String getVehicleIdentifiers() {
-        return vehicleIdentifiers;
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
-    public void setVehicleIdentifiers(String vehicleIdentifiers) {
-        this.vehicleIdentifiers = vehicleIdentifiers;
+    public Device getDevice() {
+        return device;
     }
 
-    public String getDeviceIdentifiers() {
-        return deviceIdentifiers;
-    }
-
-    public void setDeviceIdentifiers(String deviceIdentifiers) {
-        this.deviceIdentifiers = deviceIdentifiers;
+    public void setDevice(Device device) {
+        this.device = device;
     }
 
     public String getLinkedIn() {
@@ -150,7 +196,7 @@ public class Person {
     
     @Override
     public String toString(){
-        return name;
+        return lastName + " " + firstName;
     }
 
     

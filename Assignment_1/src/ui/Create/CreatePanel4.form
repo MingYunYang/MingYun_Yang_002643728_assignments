@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblMedicalRecordNumber" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHealthPlanNumber" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtMedicalRecordNumber" max="32767" attributes="0"/>
+                          <Component id="txtHealthPlanNumber" pref="334" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="lblTitle3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTitle2" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblDeviceType" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblVehicleType" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtDeviceType" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <Component id="txtVehicleType" min="-2" pref="92" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lblDeviceModel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtDeviceModel" min="-2" pref="121" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="lblVehicleModel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtVehicleModel" min="-2" pref="121" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblPlate" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblIMEI" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtIMEI" linkSize="1" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="txtPlate" linkSize="1" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <Component id="lblTitle2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDeviceType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDeviceModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDeviceModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblIMEI" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtIMEI" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDeviceType" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblVehicleType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtVehicleType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblVehicleModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtVehicleModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPlate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPlate" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="lblTitle3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtMedicalRecordNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMedicalRecordNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtHealthPlanNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHealthPlanNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSave" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblTitle">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Helvetica Neue" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Create Personal Profile: Step 4 of 6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTitle2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Helvetica Neue" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Device &amp; Vehicle Information"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDeviceType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Device Type:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDeviceModel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Model:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDeviceModel">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblIMEI">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="IMEI:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtIMEI">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblVehicleType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vehicle Type:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTitle3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Helvetica Neue" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Health Information"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBack">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblHealthPlanNumber">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Health Plan Beneficiary Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMedicalRecordNumber">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Medical Record Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtHealthPlanNumber">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMedicalRecordNumber">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDeviceType">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtVehicleType">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblVehicleModel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Model:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtVehicleModel">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPlate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Plate:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPlate">
+    </Component>
+  </SubComponents>
+</Form>

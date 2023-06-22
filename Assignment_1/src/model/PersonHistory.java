@@ -18,14 +18,6 @@ public class PersonHistory {
         history = new ArrayList<Person>();
     }
     
-    public ArrayList<Person> getHistory() {
-        return history;
-    }
-
-    public void setHistory(ArrayList<Person> history) {
-        this.history = history;
-    }
-    
     public Person newPerson(){
         Person p = new Person();
         history.add(p);
@@ -35,6 +27,15 @@ public class PersonHistory {
     public void deletePerson(Person p){
         history.remove(p);
     }
+    
+    public ArrayList<Person> getHistory() {
+        return history;
+    }
+
+    public void setHistory(ArrayList<Person> history) {
+        this.history = history;
+    }
+    
     
     
     
